@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--BOOTSTRAP JS-->>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Google Font -->
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!--BOX ICONS LINK-->
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+  <!-- ANIMATE ON SCROLL LIBRARY LINK CSS --->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- ANIMATE ON SCROLL LIBRARY LINK JS --->
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+     
+  <style>
+
+    /* NAVBAR */
+        html {
+  scroll-behavior: smooth;
+}
+   
+.navbar-nav .nav-link.active {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  padding: 6px 12px;
+  transition: 0.3s;
+  
+}
+
+.navbar-nav .nav-link {
+  color: whitesmoke;
+  margin: 5px 0;
+}
+ 
+   .navbar-brand {
+    color: whitesmoke;  
+    margin-right: 60px;
+   }
+  .navbar-brand:hover{
+      transform: scale(1.2);
+    }
+.offcanvas-title{
+  color: whitesmoke;
+}
+    /* MAIN SECTION -BG-IMG */
+    .mainsection {
+      position: relative;  
+      background-image: url("blue2.jpg");                            
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      height: 100vh;
+       display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+/* HOME SECTION CONTENT-BOX*/     
+
+    .content-box {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      height: 80%;
+      background: rgba(0, 0, 0, 0.6);  
+      border-radius: 20px;
+      padding: 30px;
+      font-family: 'Roboto', sans-serif;
+    }
+      
+   /* PRIYADASHINI */
+
+    .my-name {
+       position: absolute; 
+       bottom: 35%;
+       right: 47%;
+       color: white;
+       padding: 15px 30px;
+       font-size: 35px;
+         
+    }
+    
+    
+/* RIGHT HALF */
+     .right-half img {
+       width: 60%;
+         object-fit: cover;  
+         margin-left: 48%;
+         clip-path: circle(50%);
+     }
+     
+ 
+    /* ABOUT ME SECTION STYLE */
+    
+    .aboutme {
+      background-image: url("1.jpg/about-profile copy.jpg");
+      border-radius: 8px;
+}
+    .section , .aboutme {
+      background-image: url("1.jpg/about-profile copy.jpg");
+     }
+    .about-image img{
+        background-image: url("blue2.jpg");
+         
+      }
+/* ALL SECTION */
+
+    section { 
+      padding: 60px 20px;
+      background-attachment: fixed;
+      background-image: url("blue2.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+       
+    }
+    section header {
+      font-size: 40px;
+      margin-bottom: 20px;
+      font-family:'Montserrat', sans-serif;
+      text-align: center; 
+      max-width: 900px; 
+      margin-left: 15%;
+    }
+     section header:hover{
+      transform: scale(1.2);
+    }
+    p {
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+       text-align:left;
+        
+    }
+     i:hover {
+  transform: scale(1.2);
+}
+     
+    /* FOOTER SECTION */  
+ 
+    
+.footer {
+  background: url("blue2.jpg") center/cover fixed, #000; /* fallback black */
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+/*  Icons row – ALWAYS horizontal & centred, wraps if space is small */
+.footer-icons {
+  display: flex;
+  justify-content: center;   /* centre horizontal */
+  align-items: center;
+  gap: 22px;                 
+  flex-wrap: wrap;           
+  margin-top: 20px;
+}
+
+/* individual link */
+.footer-icons a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform .25s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+}
+
+      /* SKILLS SECTION */    
+     
+    .skills-container {
+      
+      justify-content: center;
+      gap: 80px;
+      display: flex;
+      flex-wrap: wrap; 
+    }
+      
+    .circle-container {
+       position: relative;
+          width: 140px; 
+      height: 140px;
+      line-height: 5vh;
+    }
+.circle-container:hover{
+      transform: scale(1.2);
+    }
+    .circle-container svg {
+      transform: rotate(-90deg);
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #ffffff2a;
+      stroke-width: 12;
+    }
+
+    .circle-progress {
+      fill: none;
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-dasharray: 377;
+      stroke-dashoffset: 377;
+      transition: stroke 0.3s;
+    }
+
+    .circle-text {              /* % TEXT */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+       font-weight: bold;
+      color:aliceblue;
+    }
+
+    .label {          /* SKILL NAME */ 
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .desc {                          /*MY SKILLS*/
+      font-size: 12px;
+      color: #ffcccb;
+      text-align: center;
+    }
+.label:hover,.desc:hover{
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+<body> 
+<div>
+     
+
+   <!-- MAIN SECTION -->
+ <div id="home"> 
+  <div class="mainsection">
+    <div class="content-box">
+      <div class="container-fluid">
+
+        <div class="row align-items-center">
+
+          <!-- LEFT: TEXT -->
+          <div class="col-sm-6 text-center">
+            <!-- TOP ICON BAR -->
+             <div class="d-flex flex-md-row flex-column align-items-center position-absolute" 
+     style="bottom: 12%; left: 35px; z-index: 1000; gap: 10px;">
+              <a href="https://www.instagram.com/miss_queeney" target="_blank">
+                <i class="fab fa-instagram" style="font-size: 24px; color: white;"></i>
+              </a>
+              <a href="https://wa.me/919360295282" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 24px; color: white;"></i>
+              </a>
+              <a href="tel:+919360295282">
+                <i class="fas fa-phone" style="font-size: 19px; color: white;"></i>
+              </a>
+              <a href="https://github.com/your-username" target="_blank">
+                <i class="fab fa-github" style="font-size: 24px; color: white;"></i>
+              </a>
+            </div>
+
+            <div class="my-name">
+              Hello,<br> I'm Priyadarshini <br>Web Designer
+            </div>
+          </div>
+
+          <!-- RIGHT: IMAGE -->
+          <div class="col-sm-6 text-center  ">    
+            <div class="right-half">
+              <img src="home.jpg" alt="Profile Image" style="max-width: 100%; height: auto; border-radius: 30px;">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+           <nav class="navbar navbar-dark bg-black fixed-top">
+   
+    <a class="navbar-brand" href="#">My Portfolio </a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+       <box-icon name='menu-alt-right' animation='burst' color="white" ></box-icon>  <!--MENU ICON-->
+    </button>
+ 
+    <!-- Offcanvas menu (slides from right) -->
+    <div class="offcanvas offcanvas-end bg-black" tabindex="-1"  id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works">works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footersection">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+</nav>
+ <script>
+  // Highlight nav item on click
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      navLinks.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Highlight nav item based on scroll position
+  window.addEventListener("scroll", () => {
+    let fromTop = window.scrollY;
+    navLinks.forEach(link => {
+      let section = document.querySelector(link.getAttribute("href"));
+      if (
+        section.offsetTop <= fromTop + 100 &&
+        section.offsetTop + section.offsetHeight > fromTop + 100
+      ) {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</div>
+</div>
+</div></div>
+          <!---->
+    
+        
+    
+    </div></div></div></div>
+ 
+  <!--  ABOUT ME SECTION -->
+
+   <section id="about">
+   
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Text on Left -->
+      <div class="col-sm-6">
+        <u><header>About Me</header></u> 
+
+        <p>Hello friends! Welcome to my personal portfolio site.</p>
+        <p>Hello! I'm Priya Dharshini, a passionate and creative BCA student from Tamil Nadu. I'm currently learning web development and exploring the world of HTML and CSS to build beautiful, user-friendly websites.</p>
+
+        <p>I enjoy expressing creativity through design, and I love learning new skills every day. Apart from coding, I also have a great interest in handmade crafts, especially making cute cotton dolls and designing with tools like Canva.</p>
+
+        <p>I'm always excited to take on new challenges, improve my skills, and grow step by step in the tech world. This portfolio is a small step in my journey, and I can't wait to share more of my work as I learn and grow!</p>
+      </div>
+
+      <!-- Image on Right -->
+      <div class="col-sm-6  text-center mb-4">
+        <img src="about5.jpg" alt="About Me Image" class="about-image" 
+        style="max-width: 80%; height: 80%;  ">
+      </div>
+
+    </div>
+  </div>
+<br><br><br>
+  <hr class="solid">
+</section>
+
+ 
+  <!-- PORTFOLIO SECTION -->
+  <section id="works">
+    <u><header>My Portfolio</header></u>  <br>
+    <p>All My Works, Projects, and Achievements.</p><br>
+      
+<div class="container d-flex justify-content-center">
+    <div class="content-box text-center p-4" style="background: rgba(0,0,0,0.5); border-radius: 12px; width: 40%; max-width: 400px;">
+       
+       <P>  <a href="https://github.com/whouess7/Digital-portofolio.git" target="_blank">
+  <i class="fab fa-github" style="font-size: 50px; color: white; "></i><br>
+</a>  portfolio  <br>for college project </P></div></div>
+     <br><br><br> <hr class="solid">
+     
+  </section>
+
+  <!-- SKILLS SECTION -->
+<section id="skills">
+      <u><header>Skills</header></u>  <br>  
+<div class="skills">   
+
+ <div class="skills-container"> 
+   
+ <div>
+      <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="html" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="html-text">0%</div>                         
+      </div>
+      <div class="label">   HTML      </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+     
+  <div>
+      <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="css" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="css-text">0%</div>                         
+      </div>
+      <div class="label">   CSS      </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+   
+     <div>
+      <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+            <circle class="circle-progress" id="bs" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="bs-text">0%</div> 
+      </div>                     
+      <div class="label">  Bootstrap </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+  
+      <div> 
+        <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="js" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="js-text">0%</div>
+        </div>                        
+      <div class="label">   JavaScript  </div>
+      <div class="desc"> My Skills</div>
+    </div> 
+ </div><br><br>
+     
+    <div class="skills-container"> 
+   
+ <div>
+      <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="ve" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="ve-text">0%</div>                         
+      </div>
+      <div class="label">   Video Editing      </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+ 
+     
+   
+ <div>
+      <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="sg" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="sg-text">0%</div>                         
+      </div>
+      <div class="label">   Shuttle Game     </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+    
+   
+ <div>
+      <div class="circle-container" data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="tl" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="tl-text">0%</div>                         
+      </div>
+      <div class="label">   Tamil Language      </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+    
+ <div>
+      <div class="circle-container"  data-animate="false">
+        <svg width="140" height="140">
+          <circle class="circle-bg" cx="70" cy="70" r="60"/>
+          <circle class="circle-progress" id="cda" cx="70" cy="70" r="60" />
+        </svg>
+        <div class="circle-text" id="cda-text">0%</div>                         
+      </div>
+      <div class="label">   Cartoon Drawing <br>Artist    </div>
+      <div class="desc"> My Skills</div>
+     </div> 
+     </div>
+    <script>
+  function animateSkill(id, percent, color) {
+    const circle = document.getElementById(id);
+    const text = document.getElementById(id + '-text');
+    const radius = 60;
+    const circumference = 2 * Math.PI * radius;
+
+    circle.style.stroke = color;
+
+    let current = 0;
+    const interval = setInterval(() => {
+      if (current > percent) {
+        clearInterval(interval);
+      } else {
+        const offset = circumference - (current / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+        text.innerText = current + "%";
+        current++;
+      }
+    }, 20);
+  }
+
+  function resetSkill(id) {
+    const circle = document.getElementById(id);
+    const text = document.getElementById(id + '-text');
+    circle.style.strokeDashoffset = 377;
+    text.innerText = "0%";
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Animate when skills section enters view
+        animateSkill("html", 65, "#00e5ff");
+        animateSkill("css", 65, "#00e5ff");
+        animateSkill("bs", 20, "#00e5ff");
+        animateSkill("js", 20, "#00e5ff");
+        animateSkill("ve", 50, "#00e5ff");
+        animateSkill("sg", 50, "#00e5ff");
+        animateSkill("tl", 98, "#00e5ff");
+        animateSkill("cda", 95, "#00e5ff");
+      } else {
+        // Reset when user scrolls away
+        resetSkill("html");
+        resetSkill("css");
+        resetSkill("bs");
+        resetSkill("js");
+        resetSkill("ve");
+        resetSkill("sg");
+        resetSkill("tl");
+        resetSkill("cda");
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const skillsSection = document.querySelector("#skills");
+    if (skillsSection) {
+      observer.observe(skillsSection);
+    }
+  });
+</script>
+
+
+
+<br>  
+ 
+
+  
+</section>
+
+  <!--- FOOTER SECTION -->
+<footer id="footersection" class="footer">
+  <div class="content-box">
+      <div class="container-fluid">
+  <h4>Thank You for visiting!</h4>
+  
+
+  <!-- centred horizontal icon bar -->
+  <div class="footer-icons">
+    <a href="tel:+919360295282"            aria-label="Phone"><i class="fas fa-phone"></i></a>
+    <a href="https://maps.app.goo.gl/..." target="_blank" aria-label="Location"><i class="fas fa-map-marker-alt"></i></a>
+    <a href="mailto:pd9237239@gmail.com"  aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://instagram.com/miss_queeney" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/919360295282"  target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/whouess7" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  </div></div></div>
+ </footer>
+
+<!-- copyright strip -->
+<div style="background:#000;color:antiquewhite;text-align:center;padding:8px 0;">
+  &copy; 2025 My Portfolio. All rights reserved.
+</div>
+ 
+</body>
+</html>
